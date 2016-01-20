@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shaky_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="vRa-f9-abL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-Rt-iXq">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Oad-se-cRV"/>
+                                    <constraint firstAttribute="height" constant="100" id="hUu-QW-IhJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1T-oS-xB8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7S6-M2-2KU">
+                                <rect key="frame" x="0.0" y="369" width="600" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jp-5G-zwa">
+                                <rect key="frame" x="0.0" y="405" width="600" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vRa-f9-abL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="1sU-RG-tH2"/>
+                            <constraint firstItem="hbk-Rt-iXq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61X-kF-U3B"/>
+                            <constraint firstItem="hbk-Rt-iXq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Acs-j2-hCL"/>
+                            <constraint firstItem="7S6-M2-2KU" firstAttribute="top" secondItem="hbk-Rt-iXq" secondAttribute="bottom" constant="19" id="Axd-4m-szz"/>
+                            <constraint firstItem="7S6-M2-2KU" firstAttribute="top" secondItem="c1T-oS-xB8" secondAttribute="bottom" constant="-231" id="BAZ-gj-Q1G"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vRa-f9-abL" secondAttribute="bottom" id="Fax-Bs-khc"/>
+                            <constraint firstAttribute="trailing" secondItem="c1T-oS-xB8" secondAttribute="trailing" id="LQq-Hv-rXw"/>
+                            <constraint firstAttribute="trailing" secondItem="8jp-5G-zwa" secondAttribute="trailing" id="MqD-Fq-zvE"/>
+                            <constraint firstAttribute="trailing" secondItem="vRa-f9-abL" secondAttribute="trailing" id="eGW-Eq-c9G"/>
+                            <constraint firstItem="c1T-oS-xB8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="evK-ZE-NnN"/>
+                            <constraint firstItem="c1T-oS-xB8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="iS9-UW-tWV"/>
+                            <constraint firstAttribute="trailing" secondItem="7S6-M2-2KU" secondAttribute="trailing" id="jSn-UG-BN6"/>
+                            <constraint firstItem="8jp-5G-zwa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ktt-MW-sLb"/>
+                            <constraint firstItem="8jp-5G-zwa" firstAttribute="top" secondItem="7S6-M2-2KU" secondAttribute="bottom" constant="10" id="l0o-zK-M0s"/>
+                            <constraint firstItem="vRa-f9-abL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wNe-RD-zqx"/>
+                            <constraint firstItem="7S6-M2-2KU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xfF-4t-N2V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="c1T-oS-xB8" id="hbB-So-huK"/>
+                        <outlet property="shakeImage" destination="vRa-f9-abL" id="E5Q-PL-fqz"/>
+                        <outlet property="summaryLabel" destination="8jp-5G-zwa" id="4re-Ir-zpd"/>
+                        <outlet property="tempLabel" destination="7S6-M2-2KU" id="qyr-jf-xJM"/>
+                        <outlet property="weatherIconImage" destination="hbk-Rt-iXq" id="gGH-hm-9xn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ShakeScreen" width="375" height="667"/>
+    </resources>
+</document>
