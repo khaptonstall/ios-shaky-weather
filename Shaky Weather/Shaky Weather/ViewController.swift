@@ -56,7 +56,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) -> Void in
             let json = JSON(data: data!)
-            print(json)
             if let current = json["currently"].dictionary{
                 let summary = current["summary"]!.stringValue
                 let icon = current["icon"]!.stringValue
